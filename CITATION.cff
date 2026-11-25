@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Demkov-Ostrovsky Madelung model as the circle-invariant conformal Laplacian of the round 4-sphere"
+type: software
+authors:
+  - family-names: Perreault
+    given-names: Michaël
+version: "1.0"
+date-released: "2026-11-25"
+license: CC-BY-4.0
+repository-code: "https://github.com/mik-tf/madelung-four-sphere"
+keywords:
+  - Demkov-Ostrovsky
+  - Madelung rule
+  - Kustaanheimo-Stiefel
+  - conformal Laplacian
+  - spindle
