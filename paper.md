@@ -376,7 +376,7 @@ The $\mathrm{O}(4)$ that this suggests is a relabelling. If two $\mathrm{O}(4)$ 
 
 # Reproducibility
 
-Every numerical statement in the paper is tested by a script in `code/`, and every prediction is a line `P<n>:` in `predictions.md` with the script that tests it.
+Every numerical statement in the paper is tested by a script in `code/`, and every prediction is a line `P<n>:` in `predictions.md` with the script that tests it. The scripts and predictions are archived at <https://github.com/mik-tf/madelung-four-sphere> and on Zenodo, <https://doi.org/10.5281/zenodo.24522163> (concept DOI, all versions).
 
 | Prediction | Script | What it checks |
 |---|---|---|

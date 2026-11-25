@@ -2,7 +2,9 @@
 
 Author: Michaël Perreault
 
-Version 1.0.
+Version 1.0.1.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24522163.svg)](https://doi.org/10.5281/zenodo.24522163)
 
 The zero-energy Demkov-Ostrovsky problem for the Tietz field (the n + l Madelung grouping, mu = 1/2) is, through the Kustaanheimo-Stiefel map and stereographic projection, the circle-invariant conformal Laplacian of the round 4-sphere. This explains the group sizes and the Kelvin inversion, shows that the Demkov-Ostrovsky family is a family of spindles that is smooth after the lift exactly at mu = 1/2, and gives the zero-energy Green's function in closed form.
 
@@ -39,4 +41,4 @@ It runs every script below and prints PASS or FAIL per prediction (about 3 minut
 
 ## Cite as
 
-Perreault, M. The Demkov-Ostrovsky Madelung model as the circle-invariant conformal Laplacian of the round 4-sphere, version 1.0. https://github.com/mik-tf/madelung-four-sphere (DOI to be added). See [CITATION.cff](CITATION.cff).
+Perreault, M. The Demkov-Ostrovsky Madelung model as the circle-invariant conformal Laplacian of the round 4-sphere, version 1.0.1. https://github.com/mik-tf/madelung-four-sphere (DOI: [10.5281/zenodo.24522163](https://doi.org/10.5281/zenodo.24522163) (all versions; v1.0 is [10.5281/zenodo.24522164](https://doi.org/10.5281/zenodo.24522164))). See [CITATION.cff](CITATION.cff).
