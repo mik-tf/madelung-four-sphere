@@ -30,14 +30,14 @@ OMP_NUM_THREADS=1 nice -n 19 python3 code/run_all.py
 
 It runs every script below and prints PASS or FAIL per prediction (about 3 minutes on one core). Each script also runs alone from the repository root.
 
-| Prediction | Command | What it checks |
+| Check | Command | What it checks |
 |---|---|---|
-| P1, P4, Lemmas 1 to 6 | `python3 code/proofs_check.py` | symbolic checks of the lemmas |
-| P2 | `python3 code/p2_enumeration.py` | independent count of circle-invariant harmonics on R^5 |
-| P3 | `python3 code/p3_spindle.py` | numerical spindle spectrum against Demkov-Ostrovsky Eq. 25 |
-| P5 | `python3 code/payoff_green_check.py` | Green's function and addition formula |
-| P6 | `python3 code/p6_scalar_curvature.py` | symbolic scalar curvature of g_mu |
-| P8 | `python3 code/make_figures.py --check` | figure layout check (no overlaps, inside the canvas) |
+| Lemmas 1 to 6 and Theorem B | `python3 code/proofs_check.py` | symbolic checks of the lemmas |
+| Circle-invariant harmonic count | `python3 code/p2_enumeration.py` | independent count of circle-invariant harmonics on R^5 |
+| Spindle spectrum | `python3 code/p3_spindle.py` | numerical spindle spectrum against Demkov-Ostrovsky Eq. 25 |
+| Green's function | `python3 code/payoff_green_check.py` | Green's function and addition formula |
+| Scalar curvature | `python3 code/p6_scalar_curvature.py` | symbolic scalar curvature of g_mu |
+| Figure layout | `python3 code/make_figures.py --check` | figure layout check (no overlaps, inside the canvas) |
 
 ## Cite as
 
