@@ -19,7 +19,7 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 \par\endgroup
 ```
 
-# Introduction
+# Introduction {#p4.intro}
 
 **The Madelung rule.** In the order in which the subshells of neutral atoms are filled, the subshell with quantum numbers $(n,l)$ comes before $(n',l')$ when $n+l<n'+l'$, and when the sums are equal the one with the smaller $n$ comes first. This is the Madelung $n+l$ rule [27] (also called the Klechkowski rule [28]). It groups the levels into blocks $N=n+l$, $N=1,2,3,\dots$, each containing the pairs $(n,l)$ with $n\ge l+1$ and $n+l=N$ (Figure 1). With the spin factor $2$ the blocks hold $2,2,8,8,18,18,32,32,\dots$ electrons. These are the period lengths $2,8,8,18,18,32,32$ with one extra $2$ at the start; a block ends at an $s$ subshell and a period at a noble gas, so the blocks are not the periods, but the numbers are the same. Hydrogen has no such rule: its levels depend on $n$ alone, and its hidden symmetry is the rotation group $\mathrm{SO}(4)$, found by Fock [3] as the symmetry of free motion on the 3-sphere obtained by stereographic projection of momentum space. Fock's paper is the model for the kind of result proved here: a hidden degeneracy is explained by exhibiting the sphere on which the problem is a spectral problem of a standard operator.
 
@@ -40,7 +40,7 @@ A short Proposition $\Gamma_N$ identifies each group, as a representation of the
 
 **Related work.** The step from $\mathbb R^4$ to $S^4$ is the linearisation of the bubble problem of Rey [5] and Bianchi and Egnell [4]; the KS map is due to Kustaanheimo and Stiefel [11] and is used for the Coulomb problem by Kibler and Negadi [12]. The planar shadow of the spindle, a branched cover $z\mapsto z^\mu$, is known in optics: Sarbort and Tyc [6, Eq. (22) and Table 1] and Xu, Wang, Tyc and others [7, Table 1] describe the "generalized Maxwell fish-eye" as a geodesic lens on a spindle with cone angle $2\pi\mu$, smooth only for $\mu=1$; they do not lift by the KS map and do not state the smoothness condition we prove for the lifted spindle. Kholodenko and Kauffman [8] and Kholodenko [9] treat the Tietz field through the conformal Laplacian of the 3-sphere and the Hopf map; we compare their statement in Section 3.3. Hostler [10] gave Green's functions of the Coulomb problem in closed form, and Theorem D has that form. Kitagawara and Barut [15, 16] studied the dynamical symmetry of the Demkov-Ostrovsky model with Lie-algebraic methods, and Ostrovsky [17] its group theory; we cite them from their abstracts and from papers that cite them (full text not consulted), and this is the main risk to our priority claims. Belokolos [13] and Rosu and others [18] also use the Tietz field and the Demkov-Ostrovsky weight without a 4-sphere or the KS map.
 
-# Setup
+# Setup {#p4.setup}
 
 **The problem.** The Tietz weight is
 $$
@@ -68,9 +68,9 @@ The point $u=0$ is the pole $P_0$ (the nucleus, $r=0$), and $u\to\infty$ is $P_\
 
 ![The round $S^4$ drawn as a two-sphere. The nucleus $P_0$ ($r=0$) and $P_\infty$ ($r=\infty$) are the poles, the inversion sphere $r=R$ is the equator, and the Kelvin inversion $r\mapsto R^2/r$ is the reflection in the equator that swaps the poles.](figures/fig2_s4_picture.png){width=100%}
 
-# Theorem A: the $S^4$ reading
+# Theorem A: the $S^4$ reading {#p4.thm-a}
 
-## Statement
+## Statement {#p4.stmt-thm-a}
 
 **Theorem A.** *Let $V\psi=\sqrt{2/\pi}\;\Omega^{-1}(\psi\circ\pi)$, read as a function on $S^4_a$ through $\xi$.*
 
@@ -87,7 +87,7 @@ which is Demkov and Ostrovsky's Eq. (26) of [1] at $\mu=\tfrac12$. Each $\psi_{n
 
 The pieces are not all new. Items 2 and 3, as grouped, are in [1] and [2]; the step from $\mathbb R^4$ to $S^4$ is the bubble linearisation of [4] and [5]; the step from $\mathbb R^3$ to $\mathbb R^4$ is the KS map [11, 12]. What is new, to our knowledge in the sources we could consult, is the composition, the count of circle-invariant harmonics, and the reading of Kelvin as the pole swap.
 
-## Proof
+## Proof {#p4.proof-thm-a}
 
 The proof has six steps. Independent checks of the formulas used in Steps 3, 5 and 6 are described at the end of this section and in Appendix A.7.
 
@@ -149,7 +149,7 @@ This proves item 3. The explicit form of $\psi_{nlm}$ stated after Theorem A fol
 
 **Checks.** Steps 4, 5 and 6 are tested by independent scripts (Section 9; details in Appendix A.7); all held. They cover the algebra, not the functional analysis of Step 3.
 
-## Relation to Kholodenko's S$^3$ relabelling
+## Relation to Kholodenko's S$^3$ relabelling {#p4.kholodenko}
 
 Kholodenko [9, Eq. (14b); derivation in [8, Sec. 4.6]] derives the Madelung rule from the conformal Laplacian of the round 3-sphere. His argument uses the conformal invariance of that operator, the Hopf map to pass between $S^3$ and the angular variables of the central problem, and a family of conformal transformations indexed by a parameter $\gamma$. He writes that these transformations "only cause relabeling of the indices" of the hydrogen harmonics, that the choice $\gamma=1$ gives the hydrogen atom, and that the choice $\gamma=1/2$ leads to $L^2Y_{n+l,lm}=I_{n+l,l}Y_{n+l,lm}$ (his Eq. (14b)), "implying the canonical Madelung rule". In effect the state with labels $(n,l,m)$ is placed at the spherical harmonic $Y_{n+l,l,m}$ on the round 3-sphere. Two things in this are right: the counts come out right, and the Hopf map is the correct angular ingredient, as (b) below itself shows. We show that this is a relabelling, that it is not a restriction or reduction of Theorem A, and what $S^3$ statement Theorem A does imply.
 
@@ -177,9 +177,9 @@ with group $N=2n-1$ (Kelvin even) and group $N=2n$ (Kelvin odd) both being shell
 * *Spindle and smoothness.* In 3D the metric $g_{1/2}$ has cone parameter $\tfrac12$ at both poles and is singular; after the KS lift the parameter doubles to $2\mu=1$ and the sphere is smooth (Theorem B). The planar route ($z\mapsto z^\mu$ on a branched cover) has no 3D analogue (Theorem C).
 * *The Green's function and self-adjointness.* A relabelling is not an operator identity and gives no kernel: $G_Z$ of Theorem D comes from the unitary equivalence of Theorem A, item 1, and a kernel from the $S^3$ Laplacian has multiplicities $N^2$. The limit point and limit circle analysis of Theorem B concerns the Lenz operator and has no counterpart for a relabelling.
 
-# Theorem B: the spindle, smooth iff $\mu=\tfrac12$
+# Theorem B: the spindle, smooth iff $\mu=\tfrac12$ {#p4.thm-b}
 
-## Statement
+## Statement {#p4.stmt-thm-b}
 
 For $\mu>0$ let $U_\mu$ be the potential of Section 1 and put $\chi=\ln(r/R)$. The weight of the family is
 $$
@@ -212,7 +212,7 @@ Figure 3 shows the three cases $\mu<\tfrac12$, $\mu=\tfrac12$, $\mu>\tfrac12$. A
 
 **What is known and what is new.** The planar shadow of the spindle is the optics spindle of Section 1 [6, 7], that is the branched cover $z\mapsto z^\mu$ that Demkov and Ostrovsky mention on page 1086 of [1]. The separation of variables and the Pöschl-Teller reduction in (3) are those of [1] and are reproduced here as a check. To our knowledge, in the sources we could consult, the new part is the doubling of the cone parameter to $2\mu$ by the Kustaanheimo-Stiefel map, the statement "smooth if and only if $\mu=\tfrac12$" for the lifted spindle, and the sector-by-sector classification of the self-adjoint realisations in (4).
 
-## Proof
+## Proof {#p4.proof-thm-b}
 
 **(1) The lift.** By Step 1 of Section 3.2, $-\Delta\psi=Zw_\mu\psi$ becomes $-\Delta_4F=Z\,W_\mu F$ with $W_\mu=4|u|^2w_\mu(|u|^2)=2R/\bigl(|u|^2\cosh^2(\mu\chi)\bigr)$, and $W_\mu=\Omega_\mu^2/(2\mu^2)$. The covariance law $-\Delta_4(\Omega\Phi)=\Omega^3L_{\Omega^2\delta}\Phi$ holds for every positive conformal factor $\Omega$ in dimension $4$ (Lee and Parker [19, Eq. (2.7)]), which gives the second form.
 
@@ -234,9 +234,9 @@ With $N=n_r+1+l/\mu$ one has $N+\tfrac1{2\mu}-1=s$, which gives the formula in (
 
 ![The couplings $Z_NR$ against $N$ for $\mu=1/3,1/2,2/3$. The curves are Eq. (25) of Demkov and Ostrovsky [1] (Theorem B, item 3) and the points are the numerical shooting values for $l=0,1$ and $n_r=0,1,2$. At $\mu=1/2$ the couplings are $Z_NR=N(N+1)/2$ at integer $N$.](figures/fig4_spectrum.png){width=85%}
 
-# Theorem C: no point realisations for $\mu$ other than $1$
+# Theorem C: no point realisations for $\mu$ other than $1$ {#p4.thm-c}
 
-## Statement
+## Statement {#p4.stmt-thm-c}
 
 Let $A_\mu=-w_\mu^{-1}\Delta$ be the Sturm operator of Section 4, and let $g_\mu=w_\mu|dx|^2$ be the metric of the weight, in the form
 $$
@@ -259,7 +259,7 @@ A *point symmetry* is a local diffeomorphism $\phi$, defined on a connected open
 
 The statement is a short isometry computation and we do not claim it as deep. It turns the remark that the planar route has no three-dimensional analogue into a theorem for every $\mu\ne1$.
 
-## Proof
+## Proof {#p4.proof-thm-c}
 
 *The two notions agree, and the group is the isometry group of $g_\mu$.* The equation $(-\Delta-Zw_\mu)\psi=0$ is the eigenequation $L_{g_\mu}f=Zf$ of the three-dimensional conformal Laplacian of $g_\mu$, with $A_\mu=\omega_\mu^{1/2}L_{g_\mu}\omega_\mu^{-1/2}$ and $w_\mu=\omega_\mu^2$. The principal symbol of a point symmetry forces $\phi$ to be conformal for the flat metric, hence a Möbius map (Liouville's theorem, $n=3$). The first-order terms force $J$ to be proportional to $|\phi'|^{1/2}$. The zero-order term is $Z\bigl(w_\mu-|\phi'|^2\,w_\mu\circ\phi\bigr)=0$, which for $Z\ne0$ forces $w_\mu=|\phi'|^2\,w_\mu\circ\phi$, that is $\phi$ is a local isometry of $g_\mu$. (At $Z=0$ the condition is empty, which is why $Z\ne0$ is assumed.) On the connected domain of $\phi$ Liouville's theorem gives a single Möbius map. Point symmetries of a linear elliptic equation are linear in $\psi$ up to adding solutions, so nothing is lost by taking them linear. In both notions the group is therefore the group of local isometries of $g_\mu$, acting with its conformal weight.
 
@@ -271,9 +271,9 @@ The statement is a short isometry computation and we do not claim it as deep. It
 
 **Check.** The scalar curvature (5.1) is checked symbolically; it holds (details in Appendix A.7).
 
-# Theorem D: the Green's function and the addition formula
+# Theorem D: the Green's function and the addition formula {#p4.thm-d}
 
-## Statement
+## Statement {#p4.stmt-thm-d}
 
 Fix $R>0$ and a real $Z$ that is not an eigenvalue, $Z\notin\{Z_N=N(N+1)/(2R)\}$. Let $s$ be a root of $s(s+1)=2ZR$, that is $s=\tfrac12\bigl(-1+\sqrt{1+8ZR}\bigr)$ if $ZR\ge-\tfrac18$ and $s=-\tfrac12+\tfrac i2\sqrt{-1-8ZR}$ if $ZR<-\tfrac18$. For $t\in[-1,1)$ put
 $$
@@ -319,7 +319,7 @@ $$
 
 **What is known and what is new.** Hostler [10] gave the Coulomb Green's function in closed form in the variables $r+r'\pm|x-y|$, and Duru and Kleinert [26] derived it from the Kustaanheimo-Stiefel transformation; (iii) has the same form with the same two variables. The method here is the standard Kustaanheimo-Stiefel one applied to a new weight, and the novelty is moderate to low: to our knowledge, in the sources we could consult, the closed form (6.1) with its constant, its validity for every real $Z$ off the spectrum, and the addition formula (iv) for each Madelung group have not been stated before. The integral is a one-dimensional integral (an Appell-type function) and is not elementary.
 
-## Proof
+## Proof {#p4.proof-thm-d}
 
 The proof is condensed here. The long steps are in Appendices A.2, A.3 and A.6.
 
@@ -349,7 +349,7 @@ Hence $G_Z=\pi\,\Omega(r)\Omega(r')\,\frac1{2\pi}\int_0^{2\pi}K_a(\xi u,\xi(e^{i
 
 **Checks.** Formula (6.1), the addition formula, the case $Z=0$, complex $s$, the Hopf identity and the normalisations are tested numerically against an independent partial-wave Green's function and by further exact checks; all held, with a largest relative error of $1.7\times10^{-13}$ (Figure 5 shows one comparison; details in Appendix A.7). The checks test the formulas, not the functional analysis of Step 2.
 
-# Proposition $\Gamma_N$: the Kelvin-sphere data and the doubling
+# Proposition $\Gamma_N$: the Kelvin-sphere data and the doubling {#p4.prop-gamma}
 
 **Proposition $\Gamma_N$.** *Let $E_N$ be the group of Theorem A, $k=N-1$, $p=\lfloor(N-1)/2\rfloor$. Every element of $E_N$ is, through $V$, a harmonic polynomial of degree $k$ on $\mathbb R^5$ restricted to $S^4_a$ and invariant under $T$, and it is fixed by its Cauchy data on the equator $t=0$ of $S^4_a$, which is the Kelvin sphere $r=R$:*
 
@@ -364,7 +364,7 @@ Hence $G_Z=\pi\,\Omega(r)\Omega(r')\,\frac1{2\pi}\int_0^{2\pi}K_a(\xi u,\xi(e^{i
 
 The $\mathrm{O}(4)$ that this suggests is a relabelling. If two $\mathrm{O}(4)$ actions on $E_N$ are irreducible of type $(p/2,p/2)$ and agree on $\mathrm{SO}(3)$, their intertwiner commutes with $\mathrm{SO}(3)$, and $E_N$ is multiplicity free under $\mathrm{SO}(3)$ (spins $0,\dots,p$ once each), so by Schur the intertwiner is a scalar on each $l$-block. So on each group the finite transformations are the $\mathrm{SO}(4)$ matrices of the hydrogen shell $n=p+1$ in the basis $\psi_{Nlm}$, fixed up to one scalar per $l$, and an action of this kind exists on any space with the same $\mathrm{SO}(3)$ content. The content of the proposition is $\Gamma_N$ and the doubling.
 
-# Discussion
+# Discussion {#p4.discussion}
 
 **What the $S^4$ picture explains.** Within the model it explains the group sizes $1,1,4,4,9,9,\dots$ (the circle-invariant parts of the degree-$k$ harmonics, Theorem A), the Kelvin inversion (the pole swap, a scalar on each group), the special place of $\mu=\tfrac12$ (the only smooth spindle, the only bare Coulomb core, the largest $\mu$ with a unique self-adjoint dynamics, Theorem B), the closed forms of the Green's function and the group projectors (Theorem D), and the pairing $1,1,4,4,9,9$ as each hydrogen shell taken twice (Proposition $\Gamma_N$).
 
@@ -374,7 +374,7 @@ The $\mathrm{O}(4)$ that this suggests is a relabelling. If two $\mathrm{O}(4)$ 
 
 **Open questions.** (1) Is there a momentum-space realisation of the hidden $\mathrm O(4)$, as hydrogen has one? Theorem C leaves it open, and it would be one route to the finite transformations that Demkov and Ostrovsky call unknown. (2) What happens for rational $\mu$ other than $\tfrac12$? Theorem C says that any such action is never a point map. The Pöschl-Teller index $(2l+1)/(2\mu)$ suggests a Kustaanheimo-Stiefel-type map $z\mapsto z^q$, but the cone points at both poles block the sphere argument. (3) A closed formula for the constants of a second-order vector operator on each group, and a proof that it generates an $\mathrm{so}(4)$ after a per-shell rescaling, for all $k$.
 
-# Reproducibility
+# Reproducibility {#p4.repro}
 
 Every numerical statement in the paper is tested by a script in `code/`, and every prediction is a line `P<n>:` in `predictions.md` with the script that tests it. The scripts and predictions are archived at <https://github.com/mik-tf/madelung-four-sphere> and on Zenodo, <https://doi.org/10.5281/zenodo.24522163> (concept DOI, all versions).
 
@@ -401,11 +401,11 @@ The five figures are made by `code/make_figures.py`, which reuses the data of th
 
 The checks cover the algebra and the numerics. They do not cover the functional analysis (Step 3 of Section 3.2, Appendix A.1, Appendix A.5) or the limit point and limit circle classification of Theorem B, which rest on the hand proofs. Details of the checks (error sizes, point counts) are in Appendix A.7.
 
-# Use of AI {-}
+# Use of AI {#p4.ai .unnumbered}
 
 Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic) were used in November 2026, under the author's direction, for exploratory computation, derivations, code, checks, literature search and drafting.
 
-# References {-}
+# References {#p4.refs .unnumbered}
 
 [1] Yu. N. Demkov and V. N. Ostrovsky, *Internal symmetry of the Maxwell "fish-eye" problem and the Fock group for the hydrogen atom*, Zh. Eksp. Teor. Fiz. 60 (1971) 2011-2018; Sov. Phys. JETP 33 (1971) 1083-1087. The English text was read.
 
@@ -463,9 +463,9 @@ Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic) were used in November 2026, un
 
 [28] V. M. Klechkovskii, *Justification of the rule for successive filling of $(n+l)$ groups*, Zh. Eksp. Teor. Fiz. 41 (1961) 465-466; Sov. Phys. JETP 14 (1962) 334-335. http://jetp.ras.ru/cgi-bin/e/index/e/14/2/p334?a=list (full text not consulted; later literature also cites a 1951 note by the same author, which was not found in a public record).
 
-# Appendix A: long proofs {-}
+# Appendix A: long proofs {#p4.app-a .unnumbered}
 
-## A.1 The whole spectrum of the Friedrichs realisation (Theorem B, item 3) {-}
+## A.1 The whole spectrum of the Friedrichs realisation (Theorem B, item 3) {#p4.app-a1 .unnumbered}
 
 Fix $\mu>0$. Since $r^2w_\mu=R/(2\cosh^2(\mu\chi))$ is bounded and tends to $0$ at both ends, the form setting of Section 3.2, Step 3 (the Hardy bound, which gives $\int w_\mu\psi^2\le C\int|\nabla\psi|^2$, and the lift to $D^{1,2}_T(\mathbb R^4)$) goes through unchanged, and the problem is the form problem $\int|\nabla F|^2=\lambda\int\Omega_\mu^2F^2$ on $D^{1,2}_T(\mathbb R^4)$. Decompose it into the sectors $(j=2l,\ h\in\mathcal H_{l,l})$ of Section 3.2, Step 5. In a sector write $F=|u|^{-1}\mathcal W(\sigma)h$. The cross term $2\mathcal W\mathcal W'$ integrates to zero, so the $D^{1,2}$ norm is, up to a constant, the $H^1(\mathbb R)$ norm with mass $\kappa=(2l+1)/(2\mu)>0$, namely $\int(\mathcal W_\sigma^2+\kappa^2\mathcal W^2)\,d\sigma$, and the weight form is $R\lambda\int\operatorname{sech}^2(\sigma)\mathcal W^2\,d\sigma$. The generalised eigenproblem is equivalent to the spectrum of the Birman-Schwinger operator
 $$
@@ -473,7 +473,7 @@ B=(-\partial^2+\kappa^2)^{-1/2}\,\operatorname{sech}^2(\sigma)\,(-\partial^2+\ka
 $$
 which is compact, because $\operatorname{sech}\sigma$ and $(\xi^2+\kappa^2)^{-1/2}$ both tend to $0$ at infinity (a product $f(x)g(p)$ of two such functions is compact). So each sector has discrete spectrum, and its eigenpairs are exactly the Pöschl-Teller ones, since the bound-state list of the Pöschl-Teller well is complete: $R\lambda=s(s+1)$ with $s=\kappa+n_r$. Finally $s\ge\kappa_l=(2l+1)/(2\mu)$ grows with $l$, so below any given $\lambda$ only finitely many sectors contribute, each with finitely many eigenvalues and multiplicity $2l+1$ in $m$. The direct sum over the sectors has compact resolvent, and its spectrum is exactly the list (3) of Theorem B. Only Step 3 of Section 3.2, the passage to a smooth compact manifold, needs $\mu=\tfrac12$.
 
-## A.2 Lemma G: the resolvent kernel of the unit 4-sphere {-}
+## A.2 Lemma G: the resolvent kernel of the unit 4-sphere {#p4.app-a2 .unnumbered}
 
 **Lemma G.** Let $\nu=s(s+1)\notin\{(k+1)(k+2):k\ge0\}$ and $L_1=-\Delta+2$ on the unit $S^4$. Then $(L_1-\nu)^{-1}$ is the integral operator $(\mathcal G\Phi)(p)=\int_{S^4}\gamma_s(p\cdot q)\Phi(q)\,dv(q)$, with $\gamma_s$ as in Section 6.1.
 
@@ -497,7 +497,7 @@ The term at $-1$ vanishes. At $1-\varepsilon$, $(1-t^2)^2\gamma_sP_k'=O(\varepsi
 
 *Rescaling.* Let $(D\Phi)(p)=\Phi(p/a)$. Then $\Delta_{g_a}=R^{-1}D\Delta_1D^{-1}$ and $dv_a=R^2dv_1$, so $(L-2Z)^{-1}=R\,D(L_1-2ZR)^{-1}D^{-1}$ and its kernel with respect to $dv_a$ is $K_a(p,q)=\gamma_s(p\cdot q/R)/R$.
 
-## A.3 The Hopf average identity {-}
+## A.3 The Hopf average identity {#p4.app-a3 .unnumbered}
 
 Fix $\varrho\in[-1,1]$ and real $h$ with $|h|<1$, and put $\tau=\varrho\cos\eta$. The series $\sum_nU_n(\tau)h^n=(1-2\tau h+h^2)^{-1}$ converges uniformly in $\eta$ ($|U_n|\le n+1$), so it may be averaged term by term. With $\mathsf p=1+h^2$ and $\mathsf q=2h\varrho$, $\mathsf p-|\mathsf q|\ge(1-|h|)^2>0$, and
 $$
@@ -505,11 +505,11 @@ $$
 $$
 the last step by the generating function of the Legendre polynomials. Comparing coefficients of $h^n$ gives part (v) of Theorem D. Both sides are polynomials in $\varrho$, so the identity holds for all complex $\varrho$. The representation-theoretic reading is that $U_{2l}(u\cdot v)$ is, up to the factor $(2l+1)/(2\pi^2)$, the reproducing kernel of the degree-$2l$ harmonics on $S^3$, and averaging over the Hopf fibre projects onto the $T$-invariant part $\mathcal H_{l,l}$, which the Hopf map identifies with the degree-$l$ harmonics on $S^2$, whose kernel is $P_l$.
 
-## A.4 The normalisation of the weight {-}
+## A.4 The normalisation of the weight {#p4.app-a4 .unnumbered}
 
 For $\mu=\tfrac12$, $q=r/R=e^\chi$ and $q/(1+q)^2=1/(4\cosh^2(\chi/2))$, so $r^2w=2r/(1+q)^2=2R\,q/(1+q)^2=R/(2\cosh^2(\chi/2))$. This is the case $\mu=\tfrac12$ of (4.1), and the identity of the two forms of $w$ was confirmed symbolically with sympy. For general $\mu$, (4.1) is fixed by the requirement that $Z=2v/R^3$ for all $\mu$ in (4.2): $-2U_\mu=v/(R^2r^2\cosh^2(\mu\chi))=(2v/R^3)\,w_\mu$.
 
-## A.5 Step 3 of Theorem A: the functional analysis of the equivalence {-}
+## A.5 Step 3 of Theorem A: the functional analysis of the equivalence {#p4.app-a5 .unnumbered}
 
 The operator $A$ of problem (2.1) is the self-adjoint operator in $L^2(\mathbb R^3,w\,dx)$ of the closed form $q$ on $D^{1,2}(\mathbb R^3)$.
 
@@ -525,7 +525,7 @@ So $D^{1,2}(\mathbb R^3)$ embeds continuously and injectively in $L^2(w\,dx)$, t
 
 *Unitary equivalence.* $V=\sqrt{2/\pi}\,CJ$. By Steps 1 and 2, $\|CJ\psi\|^2_{L^2(S^4)}=\tfrac12\int W(J\psi)^2=\tfrac\pi2\int w\psi^2$, so $V$ is isometric on $L^2(w\,dx)$. It is onto $L^2_T(S^4_a)$: for $\Phi\in L^2_T$, the function $F=\Omega\Phi$ has a version that is invariant everywhere (average over $T$), hence constant on the fibres of $\pi$, hence $F=\psi\circ\pi$ with $\psi\in L^2(w\,dx)$. On forms, $\tfrac12E(V\psi)=\tfrac12\cdot\tfrac2\pi\|\nabla J\psi\|^2=q(\psi)$, and $V$ maps the form domain $D^{1,2}(\mathbb R^3)$ onto the form domain $H^1_T(S^4_a)$ of $\tfrac12L$ on $L^2_T$. Two closed forms intertwined by a unitary give unitarily equivalent operators, so $VAV^{-1}=\tfrac12L|_{L^2_T}$. ($L$ commutes with the isometric action of $T$, so $L^2_T$ reduces $L$.) This proves item 1.
 
-## A.6 Theorem D: the fibre geometry, the addition formula and the range of $Z$ {-}
+## A.6 Theorem D: the fibre geometry, the addition formula and the range of $Z$ {#p4.app-a6 .unnumbered}
 
 **Step 1 (the fibre geometry, parts (ii) and (iii); Step 3 of Section 6.2).** With $|u|^2=r$, $\xi(u)/a=\bigl(\sin\theta\,u/|u|,\ -\cos\theta\bigr)$ for our $\theta$ (the last coordinate is $(r-R)/(r+R)$). The formulas (6.1) and (6.2) are unchanged under $\theta\to\pi-\theta$ for both points, because $\cos\theta\cos\theta'$ and $\sin\theta\sin\theta'$ are unchanged and $C^{(\lambda)}_n(-t)=(-1)^nC^{(\lambda)}_n(t)$ enters twice in (6.2), so it does not matter from which pole $\theta$ is measured. Then $\cos\delta_\eta=\cos\theta\cos\theta'+\sin\theta\sin\theta'\,(u/|u|)\cdot(e^{i\eta}v/|v|)$. The real inner product on $\mathbb R^4=\mathbb C^2$ gives $u\cdot e^{i\eta}v=|\langle u,v\rangle|\cos(\eta-\varphi)$, and for the Hopf form of $\pi$, $2|\langle u,v\rangle|^2=rr'+x\cdot y$, so $|\langle u,v\rangle|/(|u||v|)=\cos(\Theta/2)$. Hence $\cos\delta_\eta=\alpha+\beta\cos(\eta-\varphi)$, the shift by $\varphi$ drops out by periodicity, and $(1/2\pi)\int_0^{2\pi}=(1/\pi)\int_0^\pi$. This is (6.1) and (ii). As $\eta$ runs over a period, $\cos\delta_\eta$ runs over $[\alpha-\beta,\alpha+\beta]$, and the substitution $t=\alpha+\beta\cos\eta$ gives (iii). The Hostler form follows from $1-\cos\delta_\eta=\Omega(r)\Omega(r')|u-e^{i\eta}v|^2/(2R)$ (the chordal identity for stereographic projection) and $|u-e^{i\eta}v|^2=r+r'-2|\langle u,v\rangle|\cos(\eta-\varphi)$, whose extremes are $r+r'\mp\sqrt{2(rr'+x\cdot y)}=r+r'\mp\sqrt{\rho_+\rho_-}$.
 
@@ -535,7 +535,7 @@ So $D^{1,2}(\mathbb R^3)$ embeds continuously and injectively in $L^2(w\,dx)$, t
 
 **The range of $Z$.** No step uses that $s$ is real. Lemma G needs only that $s(s+1)$ is not an eigenvalue of $L_1$; for $ZR<-\tfrac18$, $\sin(\pi s)=-\cosh(\pi\tau)\ne0$ with $s=-\tfrac12+i\tau$, and $1-s$ and $s+2$ are complex conjugates, so $\gamma_s$ is real. The point $ZR=-\tfrac18$ is an ordinary point, and $Z=0$ is covered by the limit form. So the formula holds for every real $Z$ off the spectrum, and for every $Z<0$, including complex $s$ (that is $ZR<-\tfrac18$), $G_Z>0$. Indeed, $q$ is a Dirichlet form on $L^2(w\,dx)$ (the Dirichlet integral, which decreases under the normal contractions $\psi\mapsto\min(\max(\psi,0),1)$ and is closed on $D^{1,2}$), so $e^{-tA}$ is positivity preserving and $(A-Z)^{-1}=\int_0^\infty e^{tZ}e^{-tA}\,dt$ is positivity preserving for $Z<0$. The form is irreducible because $w>0$ and $\mathbb R^3$ is connected, so $(A-Z)^{-1}$ is positivity improving: $G_Z>0$ almost everywhere, and, $G_Z$ being continuous off the diagonal by (6.1), $G_Z\ge0$ there. $\qquad\blacksquare$
 
-## A.7 Details of the checks {-}
+## A.7 Details of the checks {#p4.app-a7 .unnumbered}
 
 **Section 3.2 (Theorem A).** The first check is the couplings $ZR=N(N+1)/2$ (Step 4). The second is the multiplicities $\lfloor(N+1)/2\rfloor^2=1,1,4,4,9,9,16,16,25$ by an enumeration of all $T$-invariant degree-$k$ harmonic polynomials on $\mathbb R^5=\mathbb C^2\times\mathbb R$ by exact linear algebra, which does not use the formula of Step 5. The third is Kelvin equals the pole swap (Step 6). All held; they cover the algebra, not the functional analysis of Step 3 (density, capacity, unitarity), which rests on the hand proof.
 
@@ -545,6 +545,6 @@ So $D^{1,2}(\mathbb R^3)$ embeds continuously and injectively in $L^2(w\,dx)$, t
 
 **Section 6.2 (Theorem D).** The first check compares (6.1) with a reference Green's function that uses neither $S^4$ nor the Kustaanheimo-Stiefel map: a partial-wave sum built from the radial solutions $P_s^{-(2l+1)}(\mp\tanh\sigma)$, $\sigma=\tfrac12\ln(r/R)$, of the Legendre-type radial equations. For $R=1.7$ and $ZR\in\{0.3,1.7,4.2,-0.05\}$ it uses 24 point pairs, with radii differing by a factor of at least $1.5$ so that the partial-wave sum converges, and the maximum relative error is $1.7\times10^{-13}$. The addition formula for $N=1,\dots,4$ agrees with the sum over explicit normalised eigenfunctions to $8.5\times10^{-14}$. A second set of 24 checks extends this to $ZR\in\{0.3,1.7,4.2,-0.05,-\tfrac18,-0.3,-2\}$ (the last two with complex $s$), the case $Z=0$, the Hopf identity for $l\le20$, the normalisations $c_{Nl}$ and the addition formula for $N=1,\dots,8$; all 24 held, with a largest error of $4.8\times10^{-13}$ for the Green's function. The pairs with $r$ close to $r'$ that showed larger disagreement in early runs are the truncation of the reference sum, not of the closed form. These checks test the formulas, not the functional analysis of Step 2 of Section 6.2.
 
-## A.8 The non-unitarity of the $\mathrm{SU}(2)\times\mathrm{SU}(2)$ realisation (Section 7) {-}
+## A.8 The non-unitarity of the $\mathrm{SU}(2)\times\mathrm{SU}(2)$ realisation (Section 7) {#p4.app-a8 .unnumbered}
 
 The compact form $\mathrm{SU}(2)\times\mathrm{SU}(2)$ acts through $g_1Xg_2^T$, which does not preserve Hermitian $X$, so it acts on the complexified data and not on the real light cone, and the realisation is not unitary for $L^2(w\,dx)$. The invariant norm squared of a datum $q$ is $2\pi^2=\mathrm{vol}(S^3)$ times its Fischer norm squared (the Fischer norm of a polynomial in $y\in\mathbb R^4$ has $\|y^\alpha\|^2=\alpha!$), and the ratio of the $L^2(S^4)$ norm squared of the block-$l$ harmonic to this quantity depends on $l$: for $k=2$ the ratios are $4/21$ and $4/105$ for $l=0,1$.
