@@ -69,6 +69,9 @@ rc, out = run("make_figures.py", "--check")
 rows.append(("P8  figure layout check (no overlaps of text with text, lines, arrows, patches; inside canvas)",
              rc == 0 and out.count(": PASS") == 5))
 
+rc, out = run("ds4_m1.py")
+rows.append(("P9  de Sitter remark, N = 1..8 (exact sympy)", rc == 0 and "OVERALL PASS" in out))
+
 width = max(len(r[0]) for r in rows)
 print()
 for name, ok in rows:

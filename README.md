@@ -2,7 +2,7 @@
 
 Author: Michaël Perreault
 
-Version 1.0.1.
+Version 1.2.0.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24522163.svg)](https://doi.org/10.5281/zenodo.24522163)
 
@@ -38,6 +38,7 @@ It runs every script below and prints PASS or FAIL per prediction (about 3 minut
 | Green's function | `python3 code/payoff_green_check.py` | Green's function and addition formula |
 | Scalar curvature | `python3 code/p6_scalar_curvature.py` | symbolic scalar curvature of g_mu |
 | Figure layout | `python3 code/make_figures.py --check` | figure layout check (no overlaps, inside the canvas) |
+| de Sitter remark | `python3 code/ds4_m1.py` | exact check of the de Sitter remark for N = 1 to 8 |
 
 ## Cite as
 

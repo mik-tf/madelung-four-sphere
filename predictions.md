@@ -11,5 +11,6 @@ P5b: Theorem D holds for every real Z off the spectrum (including Z R < -1/8 wit
 P6: there is no point symmetry beyond O(3) x Z_2 for mu other than 1; the scalar curvature is Scal = 4 (2 (1 - mu^2) cosh^2(mu x) + 6 mu^2) [code/p6_scalar_curvature.py]
 P7: for k = 2 the ratio of the L^2(S^4) norm squared to 2 pi^2 times the Fischer norm squared of the Cauchy datum is 4/21 (l = 0) and 4/105 (l = 1); the circle-charge-1 sector sizes for k = 0..6 are 0, 2, 2, 6, 6, 12, 12 [code/p7_extra_checks.py]
 P8: in each of the five figures no text overlaps another text, a line, an arrow, a marker or a patch outline, and every text lies inside the canvas [code/make_figures.py --check]
+P9: for N = 1 to 8 the functions of group N, continued to global de Sitter space and multiplied by the continued conformal factor, solve the Klein-Gordon equation with m^2 a^2 = -k(k+3), k = N - 1, are rational in e^{i eta}, have time parity (-1)^{N-1}, and span a space of dimension floor((N+1)/2)^2 equal to the count of T-invariant degree-k harmonics on R^5 [code/ds4_m1.py]
 
 Falsifiers: a source shows the S^4 lift before this work; an eigenfunction without smooth lift or with extra spectrum; an independent count that differs from floor((N + 1)/2)^2; a spindle spectrum that differs from Eq. 25; a Green's function formula that fails at a new point.

@@ -1,7 +1,7 @@
 ---
 title: "The Demkov-Ostrovsky Madelung model as the circle-invariant conformal Laplacian of the round 4-sphere"
 author: "Michaël Perreault"
-date: "2026-11-25"
+date: "2026-11-27"
 format: "article"
 toc: false
 header_footer_policy: "all"
@@ -364,6 +364,8 @@ Hence $G_Z=\pi\,\Omega(r)\Omega(r')\,\frac1{2\pi}\int_0^{2\pi}K_a(\xi u,\xi(e^{i
 
 The $\mathrm{O}(4)$ that this suggests is a relabelling. If two $\mathrm{O}(4)$ actions on $E_N$ are irreducible of type $(p/2,p/2)$ and agree on $\mathrm{SO}(3)$, their intertwiner commutes with $\mathrm{SO}(3)$, and $E_N$ is multiplicity free under $\mathrm{SO}(3)$ (spins $0,\dots,p$ once each), so by Schur the intertwiner is a scalar on each $l$-block. So on each group the finite transformations are the $\mathrm{SO}(4)$ matrices of the hydrogen shell $n=p+1$ in the basis $\psi_{Nlm}$, fixed up to one scalar per $l$, and an action of this kind exists on any space with the same $\mathrm{SO}(3)$ content. The content of the proposition is $\Gamma_N$ and the doubling.
 
+**Remark (de Sitter space).** The sphere $S^4$ is the Euclidean section of de Sitter space $\mathrm{dS}_4$. Continue the pole axis by $r=Re^{2i\eta}$, that is $t=ia\tan\eta$, which keeps the circle $T$ as a compact isometry. Then the functions of group $N$, multiplied by the continued conformal factor $(1+r/R)/2$, are the $T$-invariant solutions of $(\Box+k(k+3)/a^2)\phi=0$ on global $\mathrm{dS}_4$, where $\Box$ is the wave operator (d'Alembertian) of $\mathrm{dS}_4$, $a=R$ is its radius and $k=N-1$: they are the level-$k$ shift-symmetric scalar modes of Bonifacio, Hinterbichler, Joyce and Rosen [29], with $m^2a^2=-k(k+3)$, and their time-reversal parity is the Kelvin parity $(-1)^{N-1}$. We checked this exactly (rational arithmetic) for $N\le 8$ (P9, `code/ds4_m1.py`). It is a consistency observation about a field on a fixed background. We make no claim about the atom.
+
 # Discussion {#p4.discussion}
 
 **What the $S^4$ picture explains.** Within the model it explains the group sizes $1,1,4,4,9,9,\dots$ (the circle-invariant parts of the degree-$k$ harmonics, Theorem A), the Kelvin inversion (the pole swap, a scalar on each group), the special place of $\mu=\tfrac12$ (the only smooth spindle, the only bare Coulomb core, the largest $\mu$ with a unique self-adjoint dynamics, Theorem B), the closed forms of the Green's function and the group projectors (Theorem D), and the pairing $1,1,4,4,9,9$ as each hydrogen shell taken twice (Proposition $\Gamma_N$).
@@ -388,6 +390,7 @@ Every numerical statement in the paper is tested by a script in `code/`, and eve
 | P6 | `code/p6_scalar_curvature.py` | symbolic scalar curvature of $g_\mu$ |
 | P7 | `code/p7_extra_checks.py` | the norm ratios $4/21$ and $4/105$ of Appendix A.8 and the charge-$1$ sector sizes $0,2,2,6,6,12,12$ of Section 8 |
 | P8 | `code/make_figures.py --check` | figure layout check: in each of the five figures no text overlaps another text, a line, an arrow, a marker or a patch outline, and every text is inside the canvas |
+| P9 | `code/ds4_m1.py` | exact symbolic check of the de Sitter remark for $N=1,\dots,8$: Klein-Gordon equation, no monodromy, throat data, time parity, mode count |
 
 To run everything, from the repository root, with Python 3 and numpy, scipy, sympy and mpmath installed:
 
@@ -459,9 +462,11 @@ Claude Opus 5.5 and Claude Sonnet 5.5 (Anthropic) were used in November 2026, un
 
 [26] I. H. Duru and H. Kleinert, *Solution of the path integral for the H-atom*, Phys. Lett. B 84 (1979) 185-188. https://doi.org/10.1016/0370-2693(79)90280-6 (full text not consulted).
 
-[27] E. Madelung, *Die mathematischen Hilfsmittel des Physikers*, Springer, Berlin, 3rd edition 1936 (the source usually given for the $n+l$ rule; the book was not consulted, and the edition and page are not confirmed from a public record, so unverified).
+[27] E. Madelung, *Die mathematischen Hilfsmittel des Physikers*, Springer, Berlin, 3rd edition 1936 (the source usually given for the $n+l$ rule; full text not consulted; the edition and page are not confirmed from a public record, so unverified).
 
 [28] V. M. Klechkovskii, *Justification of the rule for successive filling of $(n+l)$ groups*, Zh. Eksp. Teor. Fiz. 41 (1961) 465-466; Sov. Phys. JETP 14 (1962) 334-335. http://jetp.ras.ru/cgi-bin/e/index/e/14/2/p334?a=list (full text not consulted; later literature also cites a 1951 note by the same author, which was not found in a public record).
+
+[29] J. Bonifacio, K. Hinterbichler, A. Joyce and R. Rosen, *Shift symmetries in (anti) de Sitter space*, J. High Energy Phys. 02 (2019) 178. arXiv:1812.08167.
 
 # Appendix A: long proofs {#p4.app-a .unnumbered}
 

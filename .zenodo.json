@@ -4,7 +4,9 @@
   "title": "The Demkov-Ostrovsky Madelung model as the circle-invariant conformal Laplacian of the round 4-sphere",
   "creators": [
     {
-      "name": "Perreault, Michaël"
+      "name": "Perreault, Michaël",
+      "orcid": "0009-0003-0017-7658",
+      "affiliation": "Independent researcher"
     }
   ],
   "description": "<p>The Madelung n+l rule groups the one-electron levels of the periodic table by the sum N = n+l. Demkov and Ostrovsky (1971, 1972) modelled it by a zero-energy Schrödinger problem in the Tietz field, in which the levels with equal N are degenerate; they state that the finite transformations of the symmetry group of their model are unknown. We show that this problem is, through the Kustaanheimo-Stiefel map and stereographic projection, the conformal Laplacian of the round 4-sphere restricted to functions invariant under the Kustaanheimo-Stiefel circle (Theorem A). This gives the spectrum, the group sizes 1, 1, 4, 4, 9, 9, &hellip; and the Kelvin inversion as the swap of the two poles. The whole Demkov-Ostrovsky family is a family of spindles, smooth exactly for the Coulomb core (Theorem B). For &mu; &ne; 1 and Z &ne; 0 the only point symmetries are rotations, reflections and the Kelvin inversion (Theorem C), so the hidden O(4), whose finite transformations we do not supply, is not realised by point maps. The zero-energy Green's function has a closed form (Theorem D). We assume the spin factor 2 and the self-dual field, and we do not derive real atoms.</p>",
@@ -23,5 +25,5 @@
       "resource_type": "software"
     }
   ],
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
